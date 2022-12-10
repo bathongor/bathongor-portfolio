@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import React, { useEffect } from 'react'
 
-const Matrix = ({ children, router }) => {
+const Matrix = ({ children }) => {
   useEffect(() => {
     const canvas = document.getElementById('canv')
     const ctx = canvas.getContext('2d')
