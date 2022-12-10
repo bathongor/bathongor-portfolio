@@ -74,15 +74,12 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          {/* <LinkItem href="/posts" path={path}>
             Posts
-          </LinkItem>
-          <LinkItem href="https://uses.craftz.dog/">
-            Uses
-          </LinkItem>
+          </LinkItem> */}
           <LinkItem
             target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href="https://github.com/bathongor"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -91,6 +88,9 @@ const Navbar = props => {
           >
             <IoLogoGithub />
             Source
+          </LinkItem>
+          <LinkItem href="/credits" path={path}>
+            Credits
           </LinkItem>
         </Stack>
 
@@ -112,18 +112,12 @@ const Navbar = props => {
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
-                <NextLink href="https://uses.craftz.dog/" passHref>
-                  <MenuItem as={Link}>Uses</MenuItem>
-                </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
-                >
+                <MenuItem as={Link} href="https://github.com/bathongor">
                   View Source
                 </MenuItem>
+                <NextLink href="/credits" passHref>
+                  <MenuItem as={Link}>Credits</MenuItem>
+                </NextLink>
               </MenuList>
             </Menu>
           </Box>

@@ -26,14 +26,14 @@ const Logo = () => {
     <Link href="/" scroll={false}>
       <a>
         <LogoBox>
-          <FootprintIcon />
+          {/* <FootprintIcon /> */}
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
             fontWeight="bold"
-            ml={3}
+            pb={5}
           >
-            Takuya Matsuyama
+            Batkhongor Chagnaa
           </Text>
         </LogoBox>
       </a>
