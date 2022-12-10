@@ -3,10 +3,6 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbSocialPay from '../public/images/works/socialpay.jpg'
-import thumbMongolChatDonate from '../public/images/works/mongol-chat-donate.jpg'
-import thumbKraft from '../public/images/works/kraft.jpg'
-
 const Works = () => (
   <Layout title="Works">
     <Container>
@@ -19,13 +15,17 @@ const Works = () => (
           <WorkGridItem
             id="mongolchat"
             title="Mongol Chat Donate"
-            thumbnail={thumbMongolChatDonate}
+            thumbnail="/images/works/mongol-chat-donate.jpg"
           >
             A donation alert system, similar to StreamLabs, for streamers
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
-          <WorkGridItem id="kraft" title="Kraft.mn" thumbnail={thumbKraft}>
+          <WorkGridItem
+            id="kraft"
+            title="Kraft.mn"
+            thumbnail="/images/works/kraft.jpg"
+          >
             An online learning platform, focusing on hard skills, in Mongolian.
           </WorkGridItem>
         </Section>
@@ -33,7 +33,7 @@ const Works = () => (
           <WorkGridItem
             id="socialpay"
             title="Social Pay"
-            thumbnail={thumbSocialPay}
+            thumbnail="/images/works/socialpay.jpg"
           >
             A landing page for one of the most popular payment apps in Mongolia
           </WorkGridItem>
