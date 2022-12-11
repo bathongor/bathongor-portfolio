@@ -15,7 +15,7 @@ const Works = () => (
           <WorkGridItem
             id="mongolchat"
             title="Mongol Chat Donate"
-            thumbnail="/images/works/mongol-chat-donate.jpg"
+            thumbnail="/images/mongol-chat-donate.jpg"
           >
             A donation alert system, similar to StreamLabs, for streamers
           </WorkGridItem>
@@ -24,7 +24,7 @@ const Works = () => (
           <WorkGridItem
             id="kraft"
             title="Kraft.mn"
-            thumbnail="/images/works/kraft.jpg"
+            thumbnail="/images/kraft.jpg"
           >
             An online learning platform, focusing on hard skills, in Mongolian.
           </WorkGridItem>
@@ -33,7 +33,7 @@ const Works = () => (
           <WorkGridItem
             id="socialpay"
             title="Social Pay"
-            thumbnail="/images/works/socialpay.jpg"
+            thumbnail="/images/socialpay.jpg"
           >
             A landing page for one of the most popular payment apps in Mongolia
           </WorkGridItem>

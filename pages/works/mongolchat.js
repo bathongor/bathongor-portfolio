@@ -47,10 +47,10 @@ const Work = () => (
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/mongolchat-03.jpg" alt="mongolchat" />
+      <WorkImage src="/images/mongolchat-03.jpg" alt="mongolchat" />
       <SimpleGrid columns={2} gap={2}>
-        <WorkImage src="/images/works/mongolchat-01.jpg" alt="mongolchat" />
-        <WorkImage src="/images/works/mongolchat-02.jpg" alt="mongolchat" />
+        <WorkImage src="/images/mongolchat-01.jpg" alt="mongolchat" />
+        <WorkImage src="/images/mongolchat-02.jpg" alt="mongolchat" />
       </SimpleGrid>
     </Container>
   </Layout>

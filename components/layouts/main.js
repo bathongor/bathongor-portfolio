@@ -19,7 +19,6 @@ const Main = ({ children, router }) => {
         <meta name="description" content="Batkhongor's homepage" />
         <meta name="author" content="Batkhongor Chagnaa" />
         <meta name="author" content="bat" />
-        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta property="og:site_name" content="Takuya Matsuyama" />
         <meta name="og:title" content="Takuya Matsuyama" />

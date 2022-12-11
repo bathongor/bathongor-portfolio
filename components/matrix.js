@@ -1,13 +1,21 @@
 import { Box } from '@chakra-ui/react'
-import React, { useEffect } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 
 const Matrix = ({ children }) => {
   useEffect(() => {
     const canvas = document.getElementById('canv')
+    canvas.width = document.body.offsetWidth
+    canvas.height = document.body.offsetHeight + 200
+    animateMatrixEffect()
+  }, [])
+
+  const animateMatrixEffect = () => {
+    const canvas = document.getElementById('canv')
     const ctx = canvas.getContext('2d')
 
-    const w = (canvas.width = document.body.offsetWidth)
-    const h = (canvas.height = document.body.offsetHeight)
+    const w = canvas.width
+    const h =
+      window.innerHeight < canvas.height ? canvas.height : window.innerHeight
     const cols = Math.floor(w / 30) + 1
     const ypos = Array(cols).fill(0)
 
@@ -29,9 +37,9 @@ const Matrix = ({ children }) => {
         else ypos[ind] = y + 30
       })
     }
-
     setInterval(matrix, 70)
-  }, [])
+  }
+
   return (
     <Box>
       <canvas id="canv" style={{ position: 'absolute', opacity: 0.2 }}></canvas>

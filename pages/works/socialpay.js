@@ -25,11 +25,8 @@ const Work = () => (
           <span>React, GSAP, CSS/SCSS</span>
         </ListItem>
       </List>
-      <WorkImage src="/images/works/socialpay_01.jpg" alt="Social Pay" />
-      <WorkImage
-        src="/images/works/socialpay_02.jpg"
-        alt="Social Pay - Page 02"
-      />
+      <WorkImage src="/images/socialpay_01.jpg" alt="Social Pay" />
+      <WorkImage src="/images/socialpay_02.jpg" alt="Social Pay - Page 02" />
     </Container>
   </Layout>
 )
